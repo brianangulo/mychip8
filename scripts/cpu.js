@@ -144,8 +144,8 @@ class CPU {
     };
 
     // Initialize a GET request to retrieve the ROM from our roms folder
-    request.open("GET", "roms/" + romName);
-    request.responseType = "arraybuffer";
+    request.open('GET', 'roms/' + romName);
+    request.responseType = 'arraybuffer';
 
     // Send the GET request
     request.send();
@@ -397,7 +397,7 @@ class CPU {
         break;
 
       default:
-        throw new Error("Unknown opcode " + opcode);
+        throw new Error('Unknown opcode ' + opcode);
     }
   }
 }
